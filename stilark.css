@@ -1,0 +1,191 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px; /* 1rem er nå 10px */
+    font-family: brother-1816, sans-serif;
+    font-style: normal;
+}
+
+body {
+	font-size: 1.4rem;
+    background-color: black;
+}
+
+main {
+}
+
+article#forside { /* grids på forsiden */     
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 8rem;
+}
+
+article#underside {
+    padding-bottom: 8rem;
+}
+
+#forside img { /* prosjekter på forsiden */    
+    opacity: 1;
+    transition: .3s ease;
+    width: 100%;
+}
+
+#forside figure {
+    position: relative;
+}
+
+#forside figure:hover img {
+     opacity: 0.4;
+}
+
+#forside figure:hover figcaption {
+     opacity: 1;
+}
+    
+h1 a {  /* LOGO */
+	display: block;
+	width: 30vw;
+	margin-left: auto;
+	margin-right: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 20rem;
+}
+
+figure img { 
+	max-width: 100%;
+}
+
+article#underside {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+h2 { /* Overskrift på siden */
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-weight: 300;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+a {
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+
+h3 {    /* Underoverskrifter */
+    font-weight: 400;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    color: whitesmoke;
+}
+
+p {     /* Vanlig brødtekst */
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+    color: whitesmoke;
+    margin-bottom: 2.5rem;
+}
+
+#om_meg figure { /* portrett av meg */
+    margin: 2rem;
+    float: right;
+    width: 20rem;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    color: whitesmoke;
+    background-color: #262626;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+
+@media screen and (min-width:700px) {
+
+html {    
+	font-size: 12px;
+}
+    
+    
+article#forside {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 7rem;
+}
+
+#forside h2 { /* overskrift på forsiden, midtstilt */       
+    grid-column: 1 / -1;
+}
+ 
+    
+    
+}
+@media screen and (min-width:1050px) {
+
+html {    
+	font-size: 12px;
+}
+    
+    
+article#forside {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 8rem;
+}
+
+#forside h2 { /* overskrift på forsiden, midtstilt */       
+    grid-column: 1 / -1;
+}
+ 
+    
+    
+}
+
+@media screen and (min-width:1300px) {  
+    
+    article#forside {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+
+@media screen and (max-width:450px){
+    
+#om_meg figure { /* portrett av meg */
+margin: 1rem;
+float: right;
+width: 15rem;
+}
