@@ -108,6 +108,11 @@ p {     /* Vanlig brødtekst */
     width: 20rem;
 }
 
+figure#galleri  {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
 footer {
     position: fixed;
     left: 0;
